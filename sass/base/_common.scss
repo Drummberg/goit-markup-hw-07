@@ -1,0 +1,21 @@
+body,
+main {
+    margin: auto;
+    background-color: var(--btn-color);
+    color: var(--secondary-title-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    display: block;
+}
+
+.section {
+    padding-bottom: 94px;
+}
+
+.gallery-icon {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
