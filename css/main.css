@@ -57,48 +57,6 @@ p {
   padding: 0;
 }
 
-.section-item {
-  background-color: #f5f4fa;
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 94px;
-}
-
-.item-list {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.card-name {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-title-color);
-  padding-bottom: 10px;
-}
-
-.card-text {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-title-color);
-  margin-bottom: 30px;
-}
-
-.card-info {
-  padding-top: 30px;
-}
-
 .filters {
   width: 611px;
   padding-top: 94px;
@@ -121,8 +79,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btnn:hover,
-.hero-btnn:focus {
+.hero-btnn:hover, .hero-btnn:focus {
   background-color: #188ce8;
 }
 
@@ -150,8 +107,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -171,8 +127,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-web:hover,
-.btn-web:focus {
+.btn-web:hover, .btn-web:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: #2196f3;
   color: var(--btn-color);
@@ -238,6 +193,14 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-input:focus {
+  border-color: #2196f3;
+}
+
+.modal-input:focus + .input-icon {
+  fill: #2196f3;
+}
+
 .input-wrapper {
   display: block;
   position: relative;
@@ -271,14 +234,6 @@ p {
   color: #ffffff;
   padding-left: 16px;
   margin-right: 0;
-}
-
-.modal-input:focus {
-  border-color: #2196f3;
-}
-
-.modal-input:focus + .input-icon {
-  fill: #2196f3;
 }
 
 .form-username {
@@ -317,8 +272,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-svg:hover,
-.btn-svg:focus {
+.btn-svg:hover, .btn-svg:focus {
   fill: #2196f3;
 }
 
@@ -360,8 +314,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: #188ce8;
   cursor: pointer;
 }
@@ -394,10 +347,6 @@ p {
   margin-bottom: 30px;
 }
 
-.modal-checkbox {
-  cursor: pointer;
-}
-
 .check-text span {
   width: 16px;
   height: 15px;
@@ -409,7 +358,16 @@ p {
   cursor: pointer;
 }
 
-.check-text-line {
+.modal-checkbox {
+  cursor: pointer;
+}
+
+.modal-checkbox:checked + .check-text span {
+  background-color: #2196f3;
+  border: none;
+}
+
+.check-text .check-text-line {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -418,11 +376,6 @@ p {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
-}
-
-.modal-checkbox:checked + .check-text span {
-  background-color: #2196f3;
-  border: none;
 }
 
 .check-icon {
@@ -597,6 +550,48 @@ p {
 .pictures {
   display: flex;
   justify-content: space-between;
+}
+
+.section-item {
+  background-color: #f5f4fa;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+.item-list {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-name {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  padding-bottom: 10px;
+}
+
+.card-text {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+  margin-bottom: 30px;
+}
+
+.card-info {
+  padding-top: 30px;
 }
 
 header {
