@@ -47,6 +47,14 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border-color: #2196f3;
+    }
+    &:focus {
+        & + .input-icon {
+            fill: #2196f3;
+        }
+    }
 }
 .input-wrapper {
     display: block;
@@ -80,12 +88,6 @@
     padding-left: 16px;
     margin-right: 0;
 }
-.modal-input:focus {
-    border-color: #2196f3;
-}
-.modal-input:focus + .input-icon {
-    fill: #2196f3;
-}
 .form-username {
     margin-bottom: 10px;
 }
@@ -117,11 +119,12 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: #2196f3;
+    }
 }
-.btn-svg:hover,
-.btn-svg:focus {
-    fill: #2196f3;
-}
+
 .modal-user-comment {
     width: 100%;
     min-height: 120px;
@@ -139,10 +142,11 @@
     color: #000000;
     outline: none;
     cursor: pointer;
+    &:focus {
+        border-color: #2196f3;
+    }
 }
-.modal-user-comment:focus {
-    border-color: #2196f3;
-}
+
 .modal-btn {
     width: 200px;
     height: 50px;
@@ -156,12 +160,13 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        cursor: pointer;
+    }
 }
-.modal-btn:hover,
-.modal-btn:focus {
-    background-color: #188ce8;
-    cursor: pointer;
-}
+
 .modal-btn-text {
     font-family: Roboto;
     font-style: normal;
@@ -187,21 +192,25 @@
     position: relative;
     align-items: center;
     margin-bottom: 30px;
+    span {
+        width: 16px;
+        height: 15px;
+        margin-right: 7px;
+        border: 2px solid #212121;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
 }
 .modal-checkbox {
     cursor: pointer;
+    &:checked + .check-text span {
+        background-color: #2196f3;
+        border: none;
+    }
 }
-.check-text span {
-    width: 16px;
-    height: 15px;
-    margin-right: 7px;
-    border: 2px solid #212121;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.check-text-line {
+.check-text .check-text-line {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -210,10 +219,6 @@
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196f3;
-}
-.modal-checkbox:checked + .check-text span {
-    background-color: #2196f3;
-    border: none;
 }
 .check-icon {
     display: flex;
