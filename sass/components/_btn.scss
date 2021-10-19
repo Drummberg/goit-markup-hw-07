@@ -17,11 +17,12 @@
     transition-property: var(--background-btn-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }
-.hero-btnn:hover,
-.hero-btnn:focus {
-    background-color: #188ce8;
-}
+
 .btnn-text {
     font-size: 16px;
     line-height: 1.87;
@@ -43,11 +44,11 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-btn:hover,
-.hero-btn:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .btn-web {
@@ -64,11 +65,11 @@
     transition-property: var(--background-btn-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-web:hover,
-.btn-web:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    background-color: #2196f3;
-    color: var(--btn-color);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        background-color: #2196f3;
+        color: var(--btn-color);
+    }
 }
