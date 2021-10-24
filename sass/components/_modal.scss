@@ -23,7 +23,7 @@
     border-radius: 4px;
     padding: 40px;
 }
-.modal-title {
+.modal__title {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -47,10 +47,12 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus {
+    &:focus,
+    &:hover {
         border-color: #2196f3;
     }
-    &:focus {
+    &:focus,
+    &:hover {
         & + .input-icon {
             fill: #2196f3;
         }
@@ -142,7 +144,8 @@
     color: #000000;
     outline: none;
     cursor: pointer;
-    &:focus {
+    &:focus,
+    &:hover {
         border-color: #2196f3;
     }
 }
