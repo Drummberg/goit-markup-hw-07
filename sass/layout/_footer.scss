@@ -28,23 +28,20 @@ footer .container {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        color: var(--active-color);
+        color: $active-color;
     }
 }
 .footer-text__maps {
     font-family: inherit;
-    font-weight: normal;
+    @include font(14px, $btn-color, 24px, normal);
     font-style: normal;
-    font-size: 14px;
-    line-height: 24px;
     letter-spacing: 0.03em;
-    color: var(--btn-color);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        color: var(--active-color);
+        color: $active-color;
     }
 }
 .footer {
@@ -66,35 +63,30 @@ footer .container {
 .social-container__title {
     font-family: inherit;
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    @include font(14px, $btn-color, 16px, bold);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: flex;
-    color: #ffffff;
     padding-bottom: 20px;
 }
 .social-box__link {
     width: 44px;
     height: 44px;
-    display: flex;
+    @extend %flex-elem;
     align-items: center;
-    justify-content: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: #fff;
+    fill: $btn-color;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        background-color: var(--active-color);
+        background-color: $active-color;
     }
 }
 .social-section {
-    display: flex;
-    justify-content: center;
+    @extend %flex-elem;
 }
 .social-container {
     width: 206px;
@@ -111,13 +103,10 @@ footer .container {
 .footer-form__title {
     font-family: inherit;
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    @include font(14px, $btn-color, 16px, bold);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: flex;
-    color: #ffffff;
     padding-bottom: 20px;
 }
 .footer-btn {
@@ -126,7 +115,7 @@ footer .container {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    background: #2196f3;
+    background: $active-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     text-align: center;
@@ -137,21 +126,18 @@ footer .container {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        background-color: #188ce8;
+        background-color: $hover-color;
         cursor: pointer;
     }
 }
 .btn-footer-text {
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
+    @include font(16px, $btn-color, 1.87, bold);
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
 }
 .btn-footer-text::after {
     content: '';
