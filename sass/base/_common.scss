@@ -1,8 +1,8 @@
 body,
 main {
     margin: auto;
-    background-color: var(--btn-color);
-    color: var(--secondary-title-color);
+    background-color: $btn-color;
+    color: $secondary-title-color;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 14px;
