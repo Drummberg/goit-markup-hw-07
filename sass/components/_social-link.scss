@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
 }
-.social-item {
+.social-list__item {
     width: 44px;
     height: 44px;
     margin-left: 10px;
@@ -29,7 +29,7 @@
         background-color: var(--active-color);
     }
 }
-.social-icon {
+.social-link__icon {
     padding: 12px;
     color: #afb1b8;
     fill: currentColor;
