@@ -13,16 +13,13 @@
     margin-right: 30px;
 }
 .peculiarities__icon {
-    display: flex;
-    justify-content: center;
+    @extend %flex-elem;
     align-items: center;
     padding: 25px 0;
 }
 .peculiarities__text {
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, $secondary-title-color, 1.71);
     letter-spacing: 0.03em;
-    color: var(--secondary-title-color);
     width: 270px;
 }
 .peculiarities__antena {
