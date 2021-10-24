@@ -5,14 +5,13 @@
 .social-item {
     width: 44px;
     height: 44px;
-}
-.social-item:hover {
-    fill: white;
-}
-.social-item + .social-item {
     margin-left: 10px;
     margin-bottom: 30px;
+    &:hover {
+        fill: white;
+    }
 }
+
 .social-link {
     width: 44px;
     height: 44px;
@@ -24,6 +23,11 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: white;
+        background-color: var(--active-color);
+    }
 }
 .social-icon {
     padding: 12px;
@@ -32,13 +36,8 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-icon:hover,
-.social-icon:focus {
-    fill: #fff;
-}
-.social-link:hover,
-.social-link:focus {
-    color: white;
-    background-color: var(--active-color);
+    &:hover,
+    &:focus {
+        fill: #fff;
+    }
 }
