@@ -421,14 +421,14 @@ p {
   justify-content: center;
 }
 
-.social-item {
+.social-list__item {
   width: 44px;
   height: 44px;
   margin-left: 10px;
   margin-bottom: 30px;
 }
 
-.social-item:hover {
+.social-list__item:hover {
   fill: white;
 }
 
@@ -450,7 +450,7 @@ p {
   background-color: var(--active-color);
 }
 
-.social-icon {
+.social-link__icon {
   padding: 12px;
   color: #afb1b8;
   fill: currentColor;
@@ -459,7 +459,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon:hover, .social-icon:focus {
+.social-link__icon:hover, .social-link__icon:focus {
   fill: #fff;
 }
 
@@ -493,11 +493,11 @@ p {
   width: 270px;
 }
 
-.icon-antena {
+.peculiarities__antena {
   align-items: center;
 }
 
-.pictures-thumb {
+.pictures__thumb {
   position: relative;
 }
 
@@ -512,7 +512,7 @@ p {
   align-items: center;
 }
 
-.pictures-title {
+.pictures-text__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -539,13 +539,13 @@ p {
   padding-bottom: 94px;
 }
 
-.item-list {
+.item__list {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.card-name {
+.item-info__name {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -556,7 +556,7 @@ p {
   padding-bottom: 10px;
 }
 
-.card-text {
+.item-info__text {
   font-family: inherit;
   font-weight: normal;
   font-size: 16px;
@@ -567,7 +567,7 @@ p {
   margin-bottom: 30px;
 }
 
-.card-info {
+.item-info {
   padding-top: 30px;
 }
 
