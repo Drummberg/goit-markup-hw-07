@@ -7,7 +7,7 @@
     border-radius: 10px #000;
 }
 
-.clients-list {
+.clients-box__list {
     margin: 0;
     padding: 0;
     width: 170px;
@@ -20,13 +20,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        border: 1px solid #2196f3;
+        border: 1px solid $active-color;
     }
 }
 
-.clients-icon {
-    display: flex;
-    justify-content: center;
+.clients-box__icon {
+    @extend %flex-elem;
     padding: 16px 32px;
     fill: #afb1b8;
     transition-property: fill;
@@ -34,6 +33,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        fill: var(--active-color);
+        fill: $active-color;
     }
 }
