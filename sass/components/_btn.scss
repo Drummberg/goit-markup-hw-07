@@ -5,23 +5,6 @@
     align-items: center;
     margin: auto;
 }
-.hero-btnn {
-    font-family: inherit;
-    font-weight: 500;
-    background-color: var(--active-color);
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    padding: 10px 32px;
-    text-align: center;
-    transition-property: var(--background-btn-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        background-color: #188ce8;
-    }
-}
 
 .btnn-text {
     font-size: 16px;
