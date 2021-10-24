@@ -19,29 +19,26 @@
 .hero-btnn {
     font-family: inherit;
     font-weight: 500;
-    background-color: var(--active-color);
+    background-color: $active-color;
     border-radius: 4px;
     cursor: pointer;
     border: none;
     padding: 10px 32px;
     text-align: center;
-    transition-property: var(--background-btn-color);
+    transition-property: $background-btn-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        background-color: #188ce8;
+        background-color: $hover-color;
     }
 }
 
 .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    @include font(44px, $btn-color, 1.36, 900);
     text-transform: uppercase;
-    color: var(--btn-color);
     margin: 0 auto;
     margin-bottom: 30px;
     max-width: 696px;
