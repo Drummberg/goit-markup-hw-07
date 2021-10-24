@@ -1,5 +1,8 @@
-@import './base/common';
 @import './base/reset';
+@import './base/extend-style';
+@import './utils/variables';
+@import './utils/mixin';
+@import './base/common';
 @import './components/btn';
 @import './components/container';
 @import './components/modal';
@@ -15,4 +18,3 @@
 @import './layout/footer';
 @import './layout/icon';
 @import './utils/hidden';
-@import './utils/variables';
