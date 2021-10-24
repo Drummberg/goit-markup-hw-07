@@ -1,6 +1,5 @@
 .social-list {
-    display: flex;
-    justify-content: center;
+    @extend %flex-elem;
 }
 .social-list__item {
     width: 44px;
@@ -8,25 +7,24 @@
     margin-left: 10px;
     margin-bottom: 30px;
     &:hover {
-        fill: white;
+        fill: $btn-color;
     }
 }
 
 .social-link {
     width: 44px;
     height: 44px;
-    display: flex;
+    @extend %flex-elem;
     align-items: center;
-    justify-content: center;
     border-radius: 50%;
-    color: white;
+    color: $btn-color;
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        color: white;
-        background-color: var(--active-color);
+        color: $btn-color;
+        background-color: $active-color;
     }
 }
 .social-link__icon {
@@ -38,6 +36,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        fill: #fff;
+        fill: $btn-color;
     }
 }
