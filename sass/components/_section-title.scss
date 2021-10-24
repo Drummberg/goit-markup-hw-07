@@ -1,9 +1,6 @@
 .section-title {
     font-family: inherit;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--primary-title-color);
+    @include font(14px, $primary-title-color, 16px, 700);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 30px;
@@ -12,12 +9,9 @@
 }
 .section-box-title {
     font-family: inherit;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    @include font(36px, $primary-title-color, 42px, 700);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-title-color);
     padding-top: 94px;
     margin-bottom: 50px;
 }
